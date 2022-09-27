@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Apex";
+    ViewBag.pTitle = "Dashboard";
+    ViewBag.pageTitle = "Charts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title mb-4">User Dashboard</h4>
+
+                <div id="column_chart" class="apex-charts" dir="ltr"></div>
+            </div>
+        </div><!--end card-->
+    </div>
+</div>
+<!-- end row -->
+
+
+@section scripts{
+    <!-- apexcharts -->
+    <script src="~/assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- apexcharts init -->
+    <script src="~/assets/js/pages/apexcharts.init.js"></script>
+
+    <!-- App js -->
+    <script src="~/assets/js/app.js"></script>
+}
